@@ -1,0 +1,85 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+;
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap')
+;
+
+:root{
+  --font-family: "M PLUS Rounded 1c", sans-serif;
+  --font-size:24px;
+  --c1:#000;
+  --c2:#444;
+  --c3:#666;
+  --c4:#aaa;
+  --c5:#ddd;
+  --c6:#fff;
+  --system:#006aff;
+}
+
+html{
+  font-family:var(--font-family);
+  font-size:var(--font-size);
+  color:var(--c2);
+  font-weight:400;
+}
+body{
+  margin:auto 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  /* 600pxまでの幅の場合に適用される */
+  html {
+    max-width:600px;
+    margin:auto;
+  }
+}
+
+
+*{
+  font-weight:bold;
+}
+h1,h2,h3,h4,h5{
+  font-size:1.6rem;
+}
+
+h1:before,h2:before,h3:before,h4:before,h5:before{
+  content:'＃';
+}
+a{
+  cursor:pointer;
+  text-decoration:none;
+  color:var(--system);
+}
+a:hover{
+  opacity:0.6;
+}
+strong{
+  color:var(--c1);
+}
+strong:has(*){
+  display:block;
+  text-align:center;
+  padding-top:1rem;
+}
+strong>a{
+  display:inline-block;  
+  background-color:var(--system);
+  color:var(--c6);
+  padding:0.5rem 4rem;
+  border-radius:0.2rem;
+}
+hr{
+  margin:1 0rem;
+  border:unset;
+  border:1px solid var(--c5);
+}
+
+strong>a:has(img){
+  background:transparent;
+  padding:0;
+}
+strong:has(img)+br{
+  display:none;
+}
+img{
+  width:80%;
+}
