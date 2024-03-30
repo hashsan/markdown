@@ -6,7 +6,7 @@
 :root{
   --font-family: "M PLUS Rounded 1c", sans-serif;
   --font-size:24px;
-  --c1:#000;
+  --c1:#f26;
   --c2:#444;
   --c3:#666;
   --c4:#aaa;
@@ -22,14 +22,14 @@ html{
   font-weight:400;
 }
 body{
-  margin:auto 1rem;
+  margin:1rem 1rem;
 }
 
 @media screen and (min-width: 600px) {
   /* 600pxまでの幅の場合に適用される */
   html {
     max-width:600px;
-    margin:auto;
+    margin:1rem auto;
   }
 }
 
@@ -39,6 +39,9 @@ body{
 }
 h1,h2,h3,h4,h5{
   font-size:1.6rem;
+}
+p{
+  padding-bottom: 1rem;
 }
 
 h1:before,h2:before,h3:before,h4:before,h5:before{
